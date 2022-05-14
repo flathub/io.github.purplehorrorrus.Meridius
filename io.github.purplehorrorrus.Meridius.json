@@ -6,7 +6,6 @@
     "base-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "meridius",
-    "separate-locales": false,
     "build-options": {
         "strip": true,
         "no-debuginfo": true
