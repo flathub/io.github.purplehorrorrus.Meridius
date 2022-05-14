@@ -46,7 +46,7 @@
                 {
                     "type": "file",
                     "url": "https://raw.githubusercontent.com/PurpleHorrorRus/Meridius/master/flatpak/io.github.purplehorrorrus.Meridius.metainfo.xml",
-                    "sha256": "6213437ad84b11068a394421f747726b81b0a43692c9efb1e1f2aff86e6f6e55"
+                    "sha256": "3d96099e573e70b31d281a2262bb39945ebd9e4db100e2389be7904e7d439891"
                 },
                 {
                     "type": "script",
