@@ -18,7 +18,8 @@
         "--filesystem=xdg-download:create",
         "--filesystem=xdg-music:create",
         "--device=dri",
-        "--own-name=org.kde.*",
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--talk-name=com.canonical.AppMenu.Registrar",
         "--own-name=org.mpris.MediaPlayer2.chromium.*"
     ],
     "modules": [
@@ -53,6 +54,7 @@
                     "type": "script",
                     "dest-filename": "meridius",
                     "commands": [
+                        "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
                         "zypak-wrapper /app/main/meridiusreborn \"$@\""
                     ]
                 }
