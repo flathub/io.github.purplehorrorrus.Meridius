@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.6.1/meridius-2.6.1.tar.gz",
-                    "sha256": "881d4c75cd0ce395e8128f079640ddeaf43ae842b619b426e287639cf538e46f",
+                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.6.0/meridius-2.6.0.tar.gz",
+                    "sha256": "0c47a30ed99bf3de2016d0960502b126f04d291d0a7d5a59d972ef9a846e2460",
                     "dest": "main"
                 },
                 {
@@ -48,7 +48,7 @@
                 {
                     "type": "file",
                     "url": "https://raw.githubusercontent.com/PurpleHorrorRus/Meridius/master/flatpak/io.github.purplehorrorrus.Meridius.metainfo.xml",
-                    "sha256": "749b446992ad03696e7f16ad4c29c920cb03e0c03c4f20d10cfbfb8697d6808a"
+                    "sha256": "2c5c3d56e9a3f6ff81a053e2a19df60343c08e08192002de07d8a3c2b4c8eb58"
                 },
                 {
                     "type": "script",
