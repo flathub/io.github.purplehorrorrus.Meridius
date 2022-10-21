@@ -29,8 +29,8 @@
             "build-commands": [
                 "cp -a ./main /app/",
                 "install -Dm755 meridius /app/bin/meridius",
-                "install -Dm644 $FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop",
-                "install -Dm644 $FLATPAK_ID.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml",
+                "install -Dm644 ./main/$FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop",
+                "install -Dm644 ./main/$FLATPAK_ID.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml",
                 "install -Dm644 ./main/builder/icons/linux/256x256.png /app/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png"
             ],
             "sources": [
