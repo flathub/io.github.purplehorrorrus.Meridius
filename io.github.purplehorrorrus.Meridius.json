@@ -36,8 +36,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.8/meridius-2.7.8.tar.gz",
-                    "sha256": "17731e8f8a3d5d5589b005a10d1e07cfa73b673c82a3cbf7f345e016e87f6c6b",
+                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.9/meridius-2.7.9.tar.gz",
+                    "sha256": "90f7cb92834e92162a94fe9fe9b026d183b03f1475e48099bfaf1fefd06fe879",
                     "dest": "main"
                 },
                 {
