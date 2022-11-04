@@ -5,18 +5,6 @@
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "add-ld-path": ".",
-            "autodelete": false,
-            "autodownload": true,
-            "directory": "lib/ffmpeg",
-            "version": "21.08"
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p /app/lib/ffmpeg"
-    ],
     "command": "meridius",
     "build-options": {
         "strip": true,
@@ -36,6 +24,31 @@
     ],
     "modules": [
         {
+            "name": "ffmpeg",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://git.ffmpeg.org/ffmpeg.git",
+                    "tag": "n5.0.1"
+                }
+            ],
+            "config-opts": [
+                "--disable-all",
+                "--enable-avcodec",
+                "--enable-avformat",
+                "--enable-avfilter",
+                "--enable-swresample",
+                "--enable-libmp3lame",
+                "--enable-pthreads",
+                "--enable-ffmpeg",
+                "--enable-protocol=file",
+                "--enable-demuxer=concat,mpegts",
+                "--enable-muxer=mp3",
+                "--enable-encoder=libmp3lame",
+                "--enable-decoder=mp3float"
+            ]
+        },
+        {
             "name": "meridius",
             "buildsystem": "simple",
             "build-commands": [
@@ -49,7 +62,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.11-beta.1/meridius-2.7.11-beta.1.tar.gz",
-                    "sha256": "0a4425bf8180b84273d90f10420f151dbded1fd9334c6238977ea5cb98c1c0b2",
+                    "sha256": "44749cce6ca4f2fa60e009e5d0d2533d9b699194b078228628c1f75deaa70dec",
                     "dest": "main"
                 },
                 {
@@ -57,6 +70,7 @@
                     "dest-filename": "meridius",
                     "commands": [
                         "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                        "export FFMPEG_BINARY=\"/app/bin/ffmpeg\"",
                         "zypak-wrapper /app/main/meridiusreborn \"$@\""
                     ]
                 }
