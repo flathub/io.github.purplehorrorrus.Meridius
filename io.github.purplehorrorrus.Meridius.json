@@ -5,6 +5,15 @@
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
+    "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "add-ld-path": ".",
+            "autodelete": false,
+            "autodownload": true,
+            "directory": "lib/ffmpeg",
+            "version": "21.08"
+        }
+    },
     "command": "meridius",
     "build-options": {
         "strip": true,
