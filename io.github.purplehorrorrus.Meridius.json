@@ -29,26 +29,16 @@
             "build-commands": [
                 "cp -a ./main /app/",
                 "install -Dm755 meridius /app/bin/meridius",
-                "install -Dm644 $FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop",
-                "install -Dm644 $FLATPAK_ID.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml",
-                "install -Dm644 ./main/build/icons/256x256.png /app/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png"
+                "install -Dm644 ./main/$FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop",
+                "install -Dm644 ./main/$FLATPAK_ID.metainfo.xml /app/share/metainfo/$FLATPAK_ID.metainfo.xml",
+                "install -Dm644 ./main/builder/icons/linux/256x256.png /app/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.6.0-beta.2/meridius-2.6.0-beta.2.tar.gz",
-                    "sha256": "2c747794ec2906188cf0c0783bb1d27d31f39323ead08ba45a4af38360c488ee",
+                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.11-beta.1/meridius-2.7.11-beta.1.tar.gz",
+                    "sha256": "0a4425bf8180b84273d90f10420f151dbded1fd9334c6238977ea5cb98c1c0b2",
                     "dest": "main"
-                },
-                {
-                    "type": "file",
-                    "url": "https://raw.githubusercontent.com/PurpleHorrorRus/Meridius/master/flatpak/io.github.purplehorrorrus.Meridius.desktop",
-                    "sha256": "f61e352117c7f8d3bae4a14ecb55958532de5341ae34d1b7b0f9b13e10c71e36"
-                },
-                {
-                    "type": "file",
-                    "url": "https://raw.githubusercontent.com/PurpleHorrorRus/Meridius/master/flatpak/io.github.purplehorrorrus.Meridius.metainfo.xml",
-                    "sha256": "59932f76f5104bc0f3faad02417d84e10a8fbada91111058c5643b5ce37b9e50"
                 },
                 {
                     "type": "script",
