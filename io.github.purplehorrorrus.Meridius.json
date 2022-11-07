@@ -39,13 +39,14 @@
                 "--enable-avfilter",
                 "--enable-swresample",
                 "--enable-libmp3lame",
+                "--enable-zlib",
                 "--enable-pthreads",
                 "--enable-ffmpeg",
                 "--enable-protocol=file",
-                "--enable-demuxer=concat,mpegts",
+                "--enable-demuxer=concat,mpegts,image2",
                 "--enable-muxer=mp3",
                 "--enable-encoder=libmp3lame",
-                "--enable-decoder=mp3float"
+                "--enable-decoder=mp3float,mjpeg,png"
             ]
         },
         {
@@ -62,7 +63,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.11/meridius-2.7.11.tar.gz",
-                    "sha256": "0a4d7757e71b017c41f97fb04d1052fd2b33129b41dff5397a1527561b746155",
+                    "sha256": "ead118b0921da7c66f72e60dbf769852a3e0e0bc5a8f943911a2cf7344078011",
                     "dest": "main"
                 },
                 {
