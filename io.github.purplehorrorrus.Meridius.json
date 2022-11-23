@@ -63,7 +63,7 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.7.14/meridius-2.7.14.tar.gz",
-                    "sha256": "335f1def7153ce9e74238a58e55e800602c2673adbe16919f0ce23c6db5d76e9",
+                    "sha256": "5043bad49426a6aa4bada966fca2ae5114e2ad1ffa065ba05a628d3950cab0ef",
                     "dest": "main"
                 },
                 {
