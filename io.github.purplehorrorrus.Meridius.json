@@ -72,7 +72,7 @@
                     "commands": [
                         "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
                         "export FFMPEG_BINARY=\"/app/bin/ffmpeg\"",
-                        "zypak-wrapper /app/main/meridiusreborn \"$@\""
+                        "zypak-wrapper /app/main/meridius \"$@\""
                     ]
                 }
             ]
