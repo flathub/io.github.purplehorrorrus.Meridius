@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.8.10/meridius-2.8.10.tar.gz",
-                    "sha256": "bb5c0a85eca6f9689316a55ab4de358350e6ddc1c43a7e87e463fec25748f1db",
+                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v2.9.0/meridius-2.9.0.tar.gz",
+                    "sha256": "c2ac36173f566a2773ff195c741b37602537d44290dcd3141f56e15e2b141963",
                     "dest": "main"
                 },
                 {
@@ -72,7 +72,7 @@
                     "commands": [
                         "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
                         "export FFMPEG_BINARY=\"/app/bin/ffmpeg\"",
-                        "zypak-wrapper /app/main/meridiusreborn \"$@\""
+                        "zypak-wrapper /app/main/meridius \"$@\""
                     ]
                 }
             ]
