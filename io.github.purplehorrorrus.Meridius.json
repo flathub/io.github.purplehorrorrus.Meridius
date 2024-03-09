@@ -29,7 +29,7 @@
                 {
                     "type": "git",
                     "url": "https://git.ffmpeg.org/ffmpeg.git",
-                    "tag": "n5.0.1"
+                    "tag": "n5.1.4"
                 }
             ],
             "config-opts": [
