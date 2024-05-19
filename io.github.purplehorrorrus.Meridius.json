@@ -62,8 +62,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v3.1.1/meridius-3.1.1.tar.gz",
-                    "sha256": "3804e46fc681f5ba7d35bc03ae56bfb1b39a7d2e2e34967dfefbee5b14b21bba",
+                    "url": "https://github.com/PurpleHorrorRus/Meridius/releases/download/v3.1.2/meridius-3.1.2.tar.gz",
+                    "sha256": "47b9b807fe78c3c3459b74f1401bd5d58aa5f372f8d091fbfabe5976326988b7",
                     "dest": "main"
                 },
                 {
